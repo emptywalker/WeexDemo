@@ -7,7 +7,7 @@ target 'WeexDemo' do
 
 platform :ios, '7.0'
 pod 'WeexSDK', :path=>'./sdk/'
-
+pod 'SDWebImage', '3.7.5'
 end
 
 target 'WeexDemoTests' do

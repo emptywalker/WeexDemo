@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YHImageLoader.h"
 #import <WeexSDK.h>
 
 @interface AppDelegate ()
@@ -26,6 +27,8 @@
     
     //init sdk enviroment
     [WXSDKEngine initSDKEnviroment];
+    //注册网络图片加载器
+    [WXSDKEngine registerHandler:[YHImageLoader new] withProtocol:@protocol(WXImgLoaderProtocol)];
     //set the log level
     [WXLog setLogLevel:WXLogLevelDebug];
     

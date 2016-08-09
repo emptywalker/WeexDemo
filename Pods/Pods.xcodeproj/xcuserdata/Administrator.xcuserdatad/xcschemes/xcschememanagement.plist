@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,22 +37,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4546174B6DB03E0C544D07F304C2E782</key>
+		<key>0C15BC60B545E9DC81A56F1A736E7E6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D6ADE5685EE909F33E512206F8FA25C</key>
+		<key>5A68E918201CA7368D24467BF3E34F88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>54C0321DCAA0ED6D4182A4B0CC50A0D9</key>
+		<key>9F97F6ABC2EC55AB7421132F02952CF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A3737F5A210A063CA64D018450662C49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3F84D3263A55E31FDD79F688773FD5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
