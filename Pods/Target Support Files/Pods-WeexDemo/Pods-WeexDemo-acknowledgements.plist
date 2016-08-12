@@ -68,6 +68,15 @@ THE SOFTWARE.
 			<string>Alibaba-INC copyright
 </string>
 			<key>Title</key>
+			<string>WXDevtool</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-INC copyright
+</string>
+			<key>Title</key>
 			<string>WeexSDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

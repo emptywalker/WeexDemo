@@ -1,0 +1,19 @@
+<template>
+	<container>
+		<foo-list list='{{list}}' description='就打你咋地'></foo-list>
+	</container>
+</template>
+
+<script>
+	module.exports = {
+		data:{
+			list:[
+			{title:'张三', image:'http://img4.duitang.com/uploads/item/201503/22/20150322084933_ymtAN.thumb.700_0.jpeg'},
+			{title:'李四', image:'http://img4.duitang.com/uploads/item/201503/22/20150322084933_ymtAN.thumb.700_0.jpeg'},
+			{title:'王五', image:'http://img4.duitang.com/uploads/item/201503/22/20150322084933_ymtAN.thumb.700_0.jpeg'},
+			{title:'赵六', image:'http://img4.duitang.com/uploads/item/201503/22/20150322084933_ymtAN.thumb.700_0.jpeg'},
+			]
+		}
+		
+	}
+</script>

@@ -1,0 +1,42 @@
+<template>
+	<container>
+		<container repeat="{% raw %}{{v in list}}{% endraw %}" class='{{gender}}' style='flex-direction:row'>
+			<!-- <image scr='{{avatar}}' style='width:200; height:200; background-color:red'></image> -->
+			<image src="{{avatar}}"></image>
+			<text>NO. {{$index + 1}}, {{v.nickName}}</text>
+			<!-- {{nickName}} -->
+		</container>
+	</container>
+
+	<container>
+    <container id="world" append="tree">
+      <text>Hello World!</text>
+    </container>
+    <container id="weex" append="node">
+      <text>Hello Weex!</text>
+    </container>
+  </container>
+	
+</template>
+
+<style>
+	.male{
+		color: red;
+	}
+	.female{
+		color: blue;
+	}
+</style>
+
+<script>
+	module.exports = {
+		data: {
+			list: [
+				{nickName:'zhangsan', gender:'male', avatar:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'},
+				{nickName:'lisi', gender:'female', avatar:'http://img4.duitang.com/uploads/item/201503/22/20150322084933_ymtAN.thumb.700_0.jpeg'},
+				{nickName:'wangwu', gender:'male', avatar:'http://cdn.duitang.com/uploads/item/201510/24/20151024123439_zrSsB.thumb.700_0.jpeg'},
+				{nickName:'zhaoqi', gender:'female', avatar:'http://cdn.duitang.com/uploads/blog/201511/02/20151102231635_Hm8Vn.thumb.700_0.jpeg'},
+			]
+		}
+	}
+</script>

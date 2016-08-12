@@ -1,0 +1,49 @@
+<template>
+	<container>
+		<image style="width:200; height:200;" src="http://gtms02.alicdn.com/tps/i2/TB1QHKjMXXXXXadXVXX20ySQVXX-512-512.png"></image>
+		<text>Alibaba Weex Team</text>
+
+		<text style="font-size:64">Alibaba</text>
+		<text class="fontClass">Weex Team</text>
+
+		<text>The time is {{datetime}}</text>
+		<text>{{title}}</text>
+		<text>{% raw %}{{getTitle()}}{% endraw %}</text>
+
+		<!-- <text>The time is {{datetime}}</text> -->
+    	<!-- <text>{{title}}</text> -->
+   		<!-- <text>{% raw %}{{getTitle()}}{% endraw %}</text> -->
+
+
+	</container>
+</template>
+
+<style >
+	.fontClass{
+		
+		font-size: 64;
+	}
+
+	text{
+		background-color: red;
+	}
+</style>
+
+<script >
+	module.exports = {
+		data: {
+			title: 'Alibaba',
+			datetime: null
+		},
+		methods: {
+			getTitle: function() {
+				// body...
+				return 'Weex Team'
+			}
+		},
+		created: function() {
+			this.datetime = new Date().toLocaleString()
+		}
+	}
+	
+</script>

@@ -1,0 +1,41 @@
+<template>
+	<container>
+		<text id='top'>TOP</text>
+		<container style='height: 10000; background-color: red;'></container>
+		<text onclick='back2Top'>back to Top</text>
+	</container>
+</template>
+
+<script>
+	var dom = require('@weex-module/dom')
+	module.exports = {
+		methods:{
+			back2Top: function () {
+				// body...
+				var top = this.$el('top')
+				dom.scrollToElement(top)
+			}
+		}
+	}
+</script>
+
+
+<!-- <template>
+    <container>
+      <text id="top">Top</text>
+      <container style="height: 10000; background-color: #999999;">
+      </container>
+      <text onclick="back2Top">Back to Top</text>
+    </container>
+  </template>
+  <script>
+    var dom = require('@weex-module/dom')
+    module.exports = {
+      methods: {
+        back2Top: function () {
+          var top = this.$el('top')
+          dom.scrollToElement(top)
+        }
+      }
+    }
+    </script> -->

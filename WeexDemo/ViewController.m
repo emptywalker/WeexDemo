@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WXDevTool.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     _instance = [[WXSDKInstance alloc] init];
     _instance.viewController = self;
     _instance.frame = self.view.frame;
@@ -48,7 +50,7 @@
 
 - (NSURL *)url{
     if(!_url){
-        _url = [[NSBundle mainBundle]URLForResource:@"BuiltInComponents" withExtension:@"js"];
+        _url = [[NSBundle mainBundle]URLForResource:@"FindElement" withExtension:@"js"];//BuiltInComponents//Test1//DataBinding//Repeat//ComposedComponent//NestingComponent
     }
     return _url;
 }

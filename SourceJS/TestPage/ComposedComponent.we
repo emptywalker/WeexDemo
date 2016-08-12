@@ -1,0 +1,12 @@
+<template>
+	<container>
+		<foo title='我是公用组件' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='话不多说 再来一波' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='我是公用组件' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='话不多说 再来一波' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='我是公用组件' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='话不多说 再来一波' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='我是公用组件' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+		<foo title='话不多说 再来一波' image='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg'></foo>
+	</container>
+</template>

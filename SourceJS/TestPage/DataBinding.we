@@ -1,0 +1,53 @@
+<template>
+	<container style='flex-direction: column'>
+		<text style='font-size:{{size}}'>{{title.value}}</text>
+		<!-- 表达式 In-template Expression -->
+		<!-- <text>{{firstName + ' ' + lastName}}</text> -->
+
+		<!-- 计算属性  Computed Properties-->
+		<text> {{fullName}} </text>
+		<text onclick='changeName' style='aligment:center'> CHANGE NAME</text>
+
+		<!-- if & repeat -->
+		<text onclick='toggle'>Toggle</text>
+		<image src='http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg' if='{{show}}' style='width:200; height:200;'></image>
+
+
+	</container>
+</template>
+
+<script >
+	module.exports = {
+		data:{
+			size: 80,
+			title: {
+				size: 90,
+				value: '不记得也没有关系'
+			},
+			firstName: '许',
+			lastName: '有红',
+			show:true
+		},
+		computed:{
+			fullName:{
+				get: function () {
+					// body...
+					return this.firstName + ' ' +this.lastName
+				},
+				set: function (v) {
+					var s = v.split(' ')
+					this.firstName = s[0]
+					this.lastName = s[1]
+				}
+			}
+		},
+		methods:{
+			changeName: function () {
+				this.fullName = 'empty walker'
+			},
+			toggle: function () {
+				this.show = !this.show
+			}
+		}
+	}
+</script>

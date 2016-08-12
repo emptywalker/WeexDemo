@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "YHImageLoader.h"
 #import <WeexSDK.h>
+#import <WXDevTool.h>
+//@import WeexSDK;
+//@import SDWebImage;
 
 @interface AppDelegate ()
 
@@ -19,6 +22,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [WXDevTool setDebug:YES];
+//    [WXDevTool launchDevToolDebugWithUrl:[self.url absoluteString]];
+
+
     
     //business configuration
     [WXAppConfiguration setAppGroup:@"AliApp"];

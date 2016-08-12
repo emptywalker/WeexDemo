@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5D151AF1691CB50C1DECECC2 /* libPods-WeexDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BA55B876CEB8AB1953772E /* libPods-WeexDemoTests.a */; };
 		B685DB0AF4707CC1A9829A3F /* libPods-WeexDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD76D891D89402AB8B2FE2C1 /* libPods-WeexDemo.a */; };
+		C345FD0C1D5C4A51009C7CEF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C345FD0B1D5C4A51009C7CEF /* libicucore.tbd */; };
+		C345FD0E1D5C4A6E009C7CEF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345FD0D1D5C4A6E009C7CEF /* CFNetwork.framework */; };
+		C345FD101D5C4A78009C7CEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345FD0F1D5C4A78009C7CEF /* CoreData.framework */; };
+		C345FD121D5C4A84009C7CEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345FD111D5C4A84009C7CEF /* Security.framework */; };
+		C345FD141D5C4A8D009C7CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345FD131D5C4A8D009C7CEF /* Foundation.framework */; };
+		C345FD161D5C4F95009C7CEF /* DataBinding.js in Resources */ = {isa = PBXBuildFile; fileRef = C345FD151D5C4F95009C7CEF /* DataBinding.js */; };
+		C345FD181D5C7026009C7CEF /* Repeat.js in Resources */ = {isa = PBXBuildFile; fileRef = C345FD171D5C7026009C7CEF /* Repeat.js */; };
 		C348B0E91D5876C300FE01C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0E81D5876C300FE01C6 /* main.m */; };
 		C348B0EC1D5876C300FE01C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0EB1D5876C300FE01C6 /* AppDelegate.m */; };
 		C348B0EF1D5876C300FE01C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0EE1D5876C300FE01C6 /* ViewController.m */; };
@@ -18,7 +25,13 @@
 		C348B1021D5876C300FE01C6 /* WeexDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B1011D5876C300FE01C6 /* WeexDemoTests.m */; };
 		C348B10D1D5876C300FE01C6 /* WeexDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B10C1D5876C300FE01C6 /* WeexDemoUITests.m */; };
 		C348B2411D58801100FE01C6 /* YHImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B2401D58801100FE01C6 /* YHImageLoader.m */; };
-		C348B2451D58858300FE01C6 /* BuiltInComponents.js in Resources */ = {isa = PBXBuildFile; fileRef = C348B2441D58858300FE01C6 /* BuiltInComponents.js */; };
+		C348B2E01D5C0ECA00FE01C6 /* BuiltInComponents.js in Resources */ = {isa = PBXBuildFile; fileRef = C348B2DB1D5C0ECA00FE01C6 /* BuiltInComponents.js */; };
+		C348B2E11D5C0ECA00FE01C6 /* BuiltInComponents.we in Resources */ = {isa = PBXBuildFile; fileRef = C348B2DC1D5C0ECA00FE01C6 /* BuiltInComponents.we */; };
+		C348B2E21D5C0ECA00FE01C6 /* Test1.js in Resources */ = {isa = PBXBuildFile; fileRef = C348B2DE1D5C0ECA00FE01C6 /* Test1.js */; };
+		C348B2E31D5C0ECA00FE01C6 /* Test1.we in Resources */ = {isa = PBXBuildFile; fileRef = C348B2DF1D5C0ECA00FE01C6 /* Test1.we */; };
+		C3F190181D5D6381009437F3 /* ComposedComponent.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190171D5D6381009437F3 /* ComposedComponent.js */; };
+		C3F1901A1D5D68D4009437F3 /* NestingComponent.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190191D5D68D4009437F3 /* NestingComponent.js */; };
+		C3F1901C1D5D6DC2009437F3 /* FindElement.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F1901B1D5D6DC2009437F3 /* FindElement.js */; };
 		C9436EE928AFC3171B9DE3AA /* libPods-WeexDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC13B04472A612E1E43A9E4A /* libPods-WeexDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +58,13 @@
 		B06B2477967BEFF6765A2A66 /* Pods-WeexDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemoTests/Pods-WeexDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B613501D0D55B0557FF09D95 /* Pods-WeexDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemoTests/Pods-WeexDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B67193504C05B4A7C5653A6D /* Pods-WeexDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemoUITests/Pods-WeexDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C345FD0B1D5C4A51009C7CEF /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		C345FD0D1D5C4A6E009C7CEF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C345FD0F1D5C4A78009C7CEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C345FD111D5C4A84009C7CEF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C345FD131D5C4A8D009C7CEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C345FD151D5C4F95009C7CEF /* DataBinding.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = DataBinding.js; sourceTree = "<group>"; };
+		C345FD171D5C7026009C7CEF /* Repeat.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Repeat.js; sourceTree = "<group>"; };
 		C348B0E41D5876C300FE01C6 /* WeexDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeexDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348B0E81D5876C300FE01C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C348B0EA1D5876C300FE01C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,7 +83,13 @@
 		C348B10E1D5876C300FE01C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C348B23F1D58801100FE01C6 /* YHImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLoader.h; sourceTree = "<group>"; };
 		C348B2401D58801100FE01C6 /* YHImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLoader.m; sourceTree = "<group>"; };
-		C348B2441D58858300FE01C6 /* BuiltInComponents.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BuiltInComponents.js; sourceTree = "<group>"; };
+		C348B2DB1D5C0ECA00FE01C6 /* BuiltInComponents.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = BuiltInComponents.js; sourceTree = "<group>"; };
+		C348B2DC1D5C0ECA00FE01C6 /* BuiltInComponents.we */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuiltInComponents.we; sourceTree = "<group>"; };
+		C348B2DE1D5C0ECA00FE01C6 /* Test1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test1.js; sourceTree = "<group>"; };
+		C348B2DF1D5C0ECA00FE01C6 /* Test1.we */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test1.we; sourceTree = "<group>"; };
+		C3F190171D5D6381009437F3 /* ComposedComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ComposedComponent.js; sourceTree = "<group>"; };
+		C3F190191D5D68D4009437F3 /* NestingComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NestingComponent.js; sourceTree = "<group>"; };
+		C3F1901B1D5D6DC2009437F3 /* FindElement.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FindElement.js; sourceTree = "<group>"; };
 		CD76D891D89402AB8B2FE2C1 /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BA55B876CEB8AB1953772E /* libPods-WeexDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31B8B328B0EB91B18EF858B /* Pods-WeexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +101,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C345FD141D5C4A8D009C7CEF /* Foundation.framework in Frameworks */,
+				C345FD121D5C4A84009C7CEF /* Security.framework in Frameworks */,
+				C345FD101D5C4A78009C7CEF /* CoreData.framework in Frameworks */,
+				C345FD0E1D5C4A6E009C7CEF /* CFNetwork.framework in Frameworks */,
+				C345FD0C1D5C4A51009C7CEF /* libicucore.tbd in Frameworks */,
 				B685DB0AF4707CC1A9829A3F /* libPods-WeexDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +132,7 @@
 		C348B0DB1D5876C300FE01C6 = {
 			isa = PBXGroup;
 			children = (
-				C348B2441D58858300FE01C6 /* BuiltInComponents.js */,
+				C348B2D91D5C0ECA00FE01C6 /* SourceJS */,
 				C348B23E1D587FEE00FE01C6 /* Tools */,
 				C348B0E61D5876C300FE01C6 /* WeexDemo */,
 				C348B1001D5876C300FE01C6 /* WeexDemoTests */,
@@ -174,9 +205,46 @@
 			path = WeexDemo/Tools;
 			sourceTree = "<group>";
 		};
+		C348B2D91D5C0ECA00FE01C6 /* SourceJS */ = {
+			isa = PBXGroup;
+			children = (
+				C348B2DA1D5C0ECA00FE01C6 /* PlaygroundPage */,
+				C348B2DD1D5C0ECA00FE01C6 /* TestPage */,
+			);
+			path = SourceJS;
+			sourceTree = "<group>";
+		};
+		C348B2DA1D5C0ECA00FE01C6 /* PlaygroundPage */ = {
+			isa = PBXGroup;
+			children = (
+				C348B2DB1D5C0ECA00FE01C6 /* BuiltInComponents.js */,
+				C348B2DC1D5C0ECA00FE01C6 /* BuiltInComponents.we */,
+			);
+			path = PlaygroundPage;
+			sourceTree = "<group>";
+		};
+		C348B2DD1D5C0ECA00FE01C6 /* TestPage */ = {
+			isa = PBXGroup;
+			children = (
+				C3F1901B1D5D6DC2009437F3 /* FindElement.js */,
+				C3F190191D5D68D4009437F3 /* NestingComponent.js */,
+				C3F190171D5D6381009437F3 /* ComposedComponent.js */,
+				C345FD171D5C7026009C7CEF /* Repeat.js */,
+				C345FD151D5C4F95009C7CEF /* DataBinding.js */,
+				C348B2DE1D5C0ECA00FE01C6 /* Test1.js */,
+				C348B2DF1D5C0ECA00FE01C6 /* Test1.we */,
+			);
+			path = TestPage;
+			sourceTree = "<group>";
+		};
 		CCE0E56720CE829D8B5A2196 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C345FD131D5C4A8D009C7CEF /* Foundation.framework */,
+				C345FD111D5C4A84009C7CEF /* Security.framework */,
+				C345FD0F1D5C4A78009C7CEF /* CoreData.framework */,
+				C345FD0D1D5C4A6E009C7CEF /* CFNetwork.framework */,
+				C345FD0B1D5C4A51009C7CEF /* libicucore.tbd */,
 				CD76D891D89402AB8B2FE2C1 /* libPods-WeexDemo.a */,
 				D1BA55B876CEB8AB1953772E /* libPods-WeexDemoTests.a */,
 				EC13B04472A612E1E43A9E4A /* libPods-WeexDemoUITests.a */,
@@ -308,10 +376,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C348B2451D58858300FE01C6 /* BuiltInComponents.js in Resources */,
+				C348B2E01D5C0ECA00FE01C6 /* BuiltInComponents.js in Resources */,
 				C348B0F71D5876C300FE01C6 /* LaunchScreen.storyboard in Resources */,
+				C3F190181D5D6381009437F3 /* ComposedComponent.js in Resources */,
+				C348B2E21D5C0ECA00FE01C6 /* Test1.js in Resources */,
+				C3F1901C1D5D6DC2009437F3 /* FindElement.js in Resources */,
+				C3F1901A1D5D68D4009437F3 /* NestingComponent.js in Resources */,
+				C348B2E11D5C0ECA00FE01C6 /* BuiltInComponents.we in Resources */,
 				C348B0F41D5876C300FE01C6 /* Assets.xcassets in Resources */,
 				C348B0F21D5876C300FE01C6 /* Main.storyboard in Resources */,
+				C345FD161D5C4F95009C7CEF /* DataBinding.js in Resources */,
+				C348B2E31D5C0ECA00FE01C6 /* Test1.we in Resources */,
+				C345FD181D5C7026009C7CEF /* Repeat.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

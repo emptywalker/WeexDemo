@@ -1,0 +1,15 @@
+<template>
+	<container>
+		<text>{{description}}</text>
+		<foo repeat='{{list}}' title='{{title}}' image='{{image}}'></foo>
+	</container>
+</template>
+
+<script>
+	module.exports = {
+		data:{
+			description: ' ',
+			list: []
+		}
+	}
+</script>
