@@ -16,16 +16,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeexDemo/ViewController.m"
-            timestampString = "492600060.745197"
+            filePath = "WeexDemo/Tools/YHEventHandler.m"
+            timestampString = "492686762.494609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-openURL:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

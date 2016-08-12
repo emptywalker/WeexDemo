@@ -1,32 +1,41 @@
 //
-//  ViewController.m
+//  YHMainViewController.m
 //  WeexDemo
 //
-//  Created by Administrator on 16/8/8.
+//  Created by Administrator on 16/8/12.
 //  Copyright © 2016年 XuYouhong. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "WXDevTool.h"
+#import "YHMainViewController.h"
+#import <WeexSDK/WXSDKInstance.h>
 
-@interface ViewController ()
+@interface YHMainViewController ()
 
+/**instace*/
+@property (nonatomic, strong) WXSDKInstance *instance;
 @property (nonatomic, strong) UIView *weexView;
+/**heigt*/
+@property (nonatomic, assign) float weexHeight;
 
 @end
 
-@implementation ViewController
-
+@implementation YHMainViewController
 - (void)dealloc{
     [self.instance destroyInstance];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    _weexHeight = self.view.frame.size.height;// - 64;
+    [self render];
+}
 
+- (void)render{
+    CGFloat width = self.view.frame.size.width;
     _instance = [[WXSDKInstance alloc] init];
     _instance.viewController = self;
-    _instance.frame = self.view.frame;
+    _instance.frame = CGRectMake(self.view.frame.size.width-width, 0, width, _weexHeight);//self.view.frame;
     [_instance renderWithURL:self.url options:@{@"bundleUrl":[self.url absoluteString]} data:nil];
     
     __weak typeof(self) weakSelf = self;
@@ -45,19 +54,14 @@
         //process renderFinish
         NSLog(@"render finish");
     };
-
 }
 
-- (NSURL *)url{
-    if(!_url){
-        _url = [[NSBundle mainBundle]URLForResource:@"FindElement" withExtension:@"js"];//BuiltInComponents//Test1//DataBinding//Repeat//ComposedComponent//NestingComponent
-    }
-    return _url;
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (NSURL *)url{
+//    if(!_url){
+//        _url = [[NSBundle mainBundle]URLForResource:@"AppDelegatePage" withExtension:@"js"];//BuiltInComponents//Test1//DataBinding//Repeat//ComposedComponent//NestingComponent//FindElement
+//    }
+//    return _url;
+//}
 
 @end

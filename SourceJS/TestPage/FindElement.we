@@ -1,41 +1,43 @@
 <template>
 	<container>
-		<text id='top'>TOP</text>
+		<!-- $el(id) -->
+<!-- 		<text id='top'>TOP</text>
 		<container style='height: 10000; background-color: red;'></container>
-		<text onclick='back2Top'>back to Top</text>
+		<text onclick='back2Top'>back to Top</text> -->
+
+		<!-- repeat -->
+
+		<text>{{ID}}</text>
+		<image src='{{imageUrl}}' id='{{imageId}}' onclick='imageClick' repeat='images' style='width: 120; height: 200; background-color:red;'></image>
+
+
 	</container>
 </template>
 
 <script>
 	var dom = require('@weex-module/dom')
 	module.exports = {
+
+		data:{
+			ID:1,
+			images:[
+				{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 1},
+				{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 2},
+				{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 3},
+				{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 4},
+			]
+		},
+
 		methods:{
 			back2Top: function () {
 				// body...
 				var top = this.$el('top')
 				dom.scrollToElement(top)
+			},
+
+			imageClick:function (e){
+				this.ID = e.target.id
 			}
 		}
 	}
 </script>
-
-
-<!-- <template>
-    <container>
-      <text id="top">Top</text>
-      <container style="height: 10000; background-color: #999999;">
-      </container>
-      <text onclick="back2Top">Back to Top</text>
-    </container>
-  </template>
-  <script>
-    var dom = require('@weex-module/dom')
-    module.exports = {
-      methods: {
-        back2Top: function () {
-          var top = this.$el('top')
-          dom.scrollToElement(top)
-        }
-      }
-    }
-    </script> -->

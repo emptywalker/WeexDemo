@@ -18,7 +18,6 @@
 		C345FD181D5C7026009C7CEF /* Repeat.js in Resources */ = {isa = PBXBuildFile; fileRef = C345FD171D5C7026009C7CEF /* Repeat.js */; };
 		C348B0E91D5876C300FE01C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0E81D5876C300FE01C6 /* main.m */; };
 		C348B0EC1D5876C300FE01C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0EB1D5876C300FE01C6 /* AppDelegate.m */; };
-		C348B0EF1D5876C300FE01C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C348B0EE1D5876C300FE01C6 /* ViewController.m */; };
 		C348B0F21D5876C300FE01C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348B0F01D5876C300FE01C6 /* Main.storyboard */; };
 		C348B0F41D5876C300FE01C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C348B0F31D5876C300FE01C6 /* Assets.xcassets */; };
 		C348B0F71D5876C300FE01C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348B0F51D5876C300FE01C6 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,9 @@
 		C3F190181D5D6381009437F3 /* ComposedComponent.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190171D5D6381009437F3 /* ComposedComponent.js */; };
 		C3F1901A1D5D68D4009437F3 /* NestingComponent.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190191D5D68D4009437F3 /* NestingComponent.js */; };
 		C3F1901C1D5D6DC2009437F3 /* FindElement.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F1901B1D5D6DC2009437F3 /* FindElement.js */; };
+		C3F1901F1D5DA6B5009437F3 /* YHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F1901E1D5DA6B5009437F3 /* YHMainViewController.m */; };
+		C3F190221D5DB571009437F3 /* AppDelegatePage.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190211D5DB571009437F3 /* AppDelegatePage.js */; };
+		C3F190251D5DC6DB009437F3 /* YHEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F190241D5DC6DB009437F3 /* YHEventHandler.m */; };
 		C9436EE928AFC3171B9DE3AA /* libPods-WeexDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC13B04472A612E1E43A9E4A /* libPods-WeexDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +71,6 @@
 		C348B0E81D5876C300FE01C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C348B0EA1D5876C300FE01C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C348B0EB1D5876C300FE01C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C348B0ED1D5876C300FE01C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C348B0EE1D5876C300FE01C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C348B0F11D5876C300FE01C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C348B0F31D5876C300FE01C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C348B0F61D5876C300FE01C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +90,11 @@
 		C3F190171D5D6381009437F3 /* ComposedComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ComposedComponent.js; sourceTree = "<group>"; };
 		C3F190191D5D68D4009437F3 /* NestingComponent.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NestingComponent.js; sourceTree = "<group>"; };
 		C3F1901B1D5D6DC2009437F3 /* FindElement.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FindElement.js; sourceTree = "<group>"; };
+		C3F1901D1D5DA6B5009437F3 /* YHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHMainViewController.h; sourceTree = "<group>"; };
+		C3F1901E1D5DA6B5009437F3 /* YHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHMainViewController.m; sourceTree = "<group>"; };
+		C3F190211D5DB571009437F3 /* AppDelegatePage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AppDelegatePage.js; sourceTree = "<group>"; };
+		C3F190231D5DC6DB009437F3 /* YHEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHEventHandler.h; sourceTree = "<group>"; };
+		C3F190241D5DC6DB009437F3 /* YHEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHEventHandler.m; sourceTree = "<group>"; };
 		CD76D891D89402AB8B2FE2C1 /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BA55B876CEB8AB1953772E /* libPods-WeexDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31B8B328B0EB91B18EF858B /* Pods-WeexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,8 +163,8 @@
 			children = (
 				C348B0EA1D5876C300FE01C6 /* AppDelegate.h */,
 				C348B0EB1D5876C300FE01C6 /* AppDelegate.m */,
-				C348B0ED1D5876C300FE01C6 /* ViewController.h */,
-				C348B0EE1D5876C300FE01C6 /* ViewController.m */,
+				C3F1901D1D5DA6B5009437F3 /* YHMainViewController.h */,
+				C3F1901E1D5DA6B5009437F3 /* YHMainViewController.m */,
 				C348B0F01D5876C300FE01C6 /* Main.storyboard */,
 				C348B0F31D5876C300FE01C6 /* Assets.xcassets */,
 				C348B0F51D5876C300FE01C6 /* LaunchScreen.storyboard */,
@@ -200,6 +205,8 @@
 			children = (
 				C348B23F1D58801100FE01C6 /* YHImageLoader.h */,
 				C348B2401D58801100FE01C6 /* YHImageLoader.m */,
+				C3F190231D5DC6DB009437F3 /* YHEventHandler.h */,
+				C3F190241D5DC6DB009437F3 /* YHEventHandler.m */,
 			);
 			name = Tools;
 			path = WeexDemo/Tools;
@@ -208,6 +215,7 @@
 		C348B2D91D5C0ECA00FE01C6 /* SourceJS */ = {
 			isa = PBXGroup;
 			children = (
+				C3F190201D5DA833009437F3 /* DelegatePage */,
 				C348B2DA1D5C0ECA00FE01C6 /* PlaygroundPage */,
 				C348B2DD1D5C0ECA00FE01C6 /* TestPage */,
 			);
@@ -235,6 +243,14 @@
 				C348B2DF1D5C0ECA00FE01C6 /* Test1.we */,
 			);
 			path = TestPage;
+			sourceTree = "<group>";
+		};
+		C3F190201D5DA833009437F3 /* DelegatePage */ = {
+			isa = PBXGroup;
+			children = (
+				C3F190211D5DB571009437F3 /* AppDelegatePage.js */,
+			);
+			path = DelegatePage;
 			sourceTree = "<group>";
 		};
 		CCE0E56720CE829D8B5A2196 /* Frameworks */ = {
@@ -382,6 +398,7 @@
 				C348B2E21D5C0ECA00FE01C6 /* Test1.js in Resources */,
 				C3F1901C1D5D6DC2009437F3 /* FindElement.js in Resources */,
 				C3F1901A1D5D68D4009437F3 /* NestingComponent.js in Resources */,
+				C3F190221D5DB571009437F3 /* AppDelegatePage.js in Resources */,
 				C348B2E11D5C0ECA00FE01C6 /* BuiltInComponents.we in Resources */,
 				C348B0F41D5876C300FE01C6 /* Assets.xcassets in Resources */,
 				C348B0F21D5876C300FE01C6 /* Main.storyboard in Resources */,
@@ -535,8 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C348B0EF1D5876C300FE01C6 /* ViewController.m in Sources */,
 				C348B2411D58801100FE01C6 /* YHImageLoader.m in Sources */,
+				C3F1901F1D5DA6B5009437F3 /* YHMainViewController.m in Sources */,
+				C3F190251D5DC6DB009437F3 /* YHEventHandler.m in Sources */,
 				C348B0EC1D5876C300FE01C6 /* AppDelegate.m in Sources */,
 				C348B0E91D5876C300FE01C6 /* main.m in Sources */,
 			);

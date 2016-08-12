@@ -8,10 +8,10 @@
 
 #import "AppDelegate.h"
 #import "YHImageLoader.h"
+#import "YHEventHandler.h"
 #import <WeexSDK.h>
 #import <WXDevTool.h>
-//@import WeexSDK;
-//@import SDWebImage;
+#import "YHMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,12 +22,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self initWeexSDK];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[self mainViewController]];
+    [self.window makeKeyAndVisible];
     
+    return YES;
+}
+
+
+- (void)initWeexSDK{
     [WXDevTool setDebug:YES];
-//    [WXDevTool launchDevToolDebugWithUrl:[self.url absoluteString]];
-
-
-    
     //business configuration
     [WXAppConfiguration setAppGroup:@"AliApp"];
     [WXAppConfiguration setAppName:@"WeexDemo"];
@@ -37,10 +43,18 @@
     [WXSDKEngine initSDKEnviroment];
     //注册网络图片加载器
     [WXSDKEngine registerHandler:[YHImageLoader new] withProtocol:@protocol(WXImgLoaderProtocol)];
+    //注册事件处理
+    [WXSDKEngine registerHandler:[YHEventHandler new] withProtocol:@protocol(WXEventModuleProtocol)];
+    [WXSDKEngine registerModule:@"event" withClass:[YHEventHandler class]];
     //set the log level
     [WXLog setLogLevel:WXLogLevelDebug];
-    
-    return YES;
+}
+
+- (UIViewController *)mainViewController{
+    UIViewController *mainVC = [[YHMainViewController alloc]init];
+    NSURL *url = [[NSBundle mainBundle]URLForResource:@"AppDelegatePage" withExtension:@"js"];
+    ((YHMainViewController *)mainVC).url = url;
+    return mainVC;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

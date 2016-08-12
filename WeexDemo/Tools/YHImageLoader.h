@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <WeexSDK/WXImgLoaderProtocol.h>
+//#import <WeexSDK/WXModuleProtocol.h>
 #import <WeexSDK.h>
-
 @interface YHImageLoader : NSObject<WXImgLoaderProtocol, WXImageOperationProtocol>
 
 @end

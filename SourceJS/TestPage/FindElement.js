@@ -44,16 +44,31 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	;__weex_define__("@weex-component/24e17b7e75a2a8fc8bdef620600b0863", [], function(__weex_require__, __weex_exports__, __weex_module__){
+	;__weex_define__("@weex-component/031c4807a724721b4712480ebed10756", [], function(__weex_require__, __weex_exports__, __weex_module__){
 
 	;
 		var dom = __weex_require__('@weex-module/dom')
 		__weex_module__.exports = {
+
+			data:function () {return {
+				ID:1,
+				images:[
+					{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 1},
+					{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 2},
+					{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 3},
+					{imageUrl:'http://pic.iqshw.com/d/file/gexingqqziyuan/touxiang/2016/03/17/a3fda1b619e70245d9ffc12e54c673e0.jpg', imageId: 4},
+				]
+			}},
+
 			methods:{
 				back2Top: function () {
 					// body...
 					var top = this.$el('top')
 					dom.scrollToElement(top)
+				},
+
+				imageClick:function (e){
+					// this.ID = e.target.id
 				}
 			}
 		}
@@ -63,32 +78,30 @@
 	  "type": "container",
 	  "children": [
 	    {
-	      "type": "text",
-	      "id": "top",
+	      "type": "image",
 	      "attr": {
-	        "value": "TOP"
-	      }
-	    },
-	    {
-	      "type": "container",
-	      "style": {
-	        "height": 10000,
-	        "backgroundColor": "#FF0000"
-	      }
-	    },
-	    {
-	      "type": "text",
-	      "events": {
-	        "click": "back2Top"
+	        "scr": function () {return this.imageUrl}
 	      },
+	      "id": function () {return this.imageId},
+	      "events": {
+	        "click": "imageClick"
+	      },
+	      "repeat": function () {return this.images},
+	      "style": {
+	        "width": 120,
+	        "height": 200
+	      }
+	    },
+	    {
+	      "type": "text",
 	      "attr": {
-	        "value": "back to Top"
+	        "value": function () {return this.ID}
 	      }
 	    }
 	  ]
 	})
 	})
-	;__weex_bootstrap__("@weex-component/24e17b7e75a2a8fc8bdef620600b0863", {
+	;__weex_bootstrap__("@weex-component/031c4807a724721b4712480ebed10756", {
 	  "transformerVersion": "0.3.1"
 	},undefined)
 
