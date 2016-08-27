@@ -26,8 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _weexHeight = self.view.frame.size.height;// - 64;
+    _weexHeight = self.view.frame.size.height - 64;
     [self render];
 }
 
@@ -35,13 +36,14 @@
     CGFloat width = self.view.frame.size.width;
     _instance = [[WXSDKInstance alloc] init];
     _instance.viewController = self;
-    _instance.frame = CGRectMake(self.view.frame.size.width-width, 0, width, _weexHeight);//self.view.frame;
+    _instance.frame = CGRectMake(self.view.frame.size.width-width, 64, width, _weexHeight);//self.view.frame;
     [_instance renderWithURL:self.url options:@{@"bundleUrl":[self.url absoluteString]} data:nil];
     
     __weak typeof(self) weakSelf = self;
     _instance.onCreate = ^(UIView *view) {
         weakSelf.weexView = view;
         [weakSelf.weexView removeFromSuperview];
+        weakSelf.weexView.backgroundColor = [UIColor whiteColor];
         [weakSelf.view addSubview:weakSelf.weexView];
     };
     
@@ -55,13 +57,4 @@
         NSLog(@"render finish");
     };
 }
-
-
-//- (NSURL *)url{
-//    if(!_url){
-//        _url = [[NSBundle mainBundle]URLForResource:@"AppDelegatePage" withExtension:@"js"];//BuiltInComponents//Test1//DataBinding//Repeat//ComposedComponent//NestingComponent//FindElement
-//    }
-//    return _url;
-//}
-
 @end

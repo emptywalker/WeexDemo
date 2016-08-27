@@ -34,6 +34,7 @@
 		C3F1901F1D5DA6B5009437F3 /* YHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F1901E1D5DA6B5009437F3 /* YHMainViewController.m */; };
 		C3F190221D5DB571009437F3 /* AppDelegatePage.js in Resources */ = {isa = PBXBuildFile; fileRef = C3F190211D5DB571009437F3 /* AppDelegatePage.js */; };
 		C3F190251D5DC6DB009437F3 /* YHEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F190241D5DC6DB009437F3 /* YHEventHandler.m */; };
+		C3F190291D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F190281D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.m */; };
 		C9436EE928AFC3171B9DE3AA /* libPods-WeexDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC13B04472A612E1E43A9E4A /* libPods-WeexDemoUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		C3F190211D5DB571009437F3 /* AppDelegatePage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AppDelegatePage.js; sourceTree = "<group>"; };
 		C3F190231D5DC6DB009437F3 /* YHEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHEventHandler.h; sourceTree = "<group>"; };
 		C3F190241D5DC6DB009437F3 /* YHEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHEventHandler.m; sourceTree = "<group>"; };
+		C3F190271D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHDemoNaviBar.h"; sourceTree = "<group>"; };
+		C3F190281D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHDemoNaviBar.m"; sourceTree = "<group>"; };
 		CD76D891D89402AB8B2FE2C1 /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BA55B876CEB8AB1953772E /* libPods-WeexDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31B8B328B0EB91B18EF858B /* Pods-WeexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexDemo/Pods-WeexDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 		C348B0DB1D5876C300FE01C6 = {
 			isa = PBXGroup;
 			children = (
+				C3F190261D5EC072009437F3 /* Category */,
 				C348B2D91D5C0ECA00FE01C6 /* SourceJS */,
 				C348B23E1D587FEE00FE01C6 /* Tools */,
 				C348B0E61D5876C300FE01C6 /* WeexDemo */,
@@ -251,6 +255,15 @@
 				C3F190211D5DB571009437F3 /* AppDelegatePage.js */,
 			);
 			path = DelegatePage;
+			sourceTree = "<group>";
+		};
+		C3F190261D5EC072009437F3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C3F190271D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.h */,
+				C3F190281D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		CCE0E56720CE829D8B5A2196 /* Frameworks */ = {
@@ -554,6 +567,7 @@
 			files = (
 				C348B2411D58801100FE01C6 /* YHImageLoader.m in Sources */,
 				C3F1901F1D5DA6B5009437F3 /* YHMainViewController.m in Sources */,
+				C3F190291D5EC09A009437F3 /* UIViewController+YHDemoNaviBar.m in Sources */,
 				C3F190251D5DC6DB009437F3 /* YHEventHandler.m in Sources */,
 				C348B0EC1D5876C300FE01C6 /* AppDelegate.m in Sources */,
 				C348B0E91D5876C300FE01C6 /* main.m in Sources */,

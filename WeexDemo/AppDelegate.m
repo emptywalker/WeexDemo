@@ -25,7 +25,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self initWeexSDK];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[self mainViewController]];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[self mainViewController]];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -53,6 +55,7 @@
 - (UIViewController *)mainViewController{
     UIViewController *mainVC = [[YHMainViewController alloc]init];
     NSURL *url = [[NSBundle mainBundle]URLForResource:@"AppDelegatePage" withExtension:@"js"];
+    mainVC.navigationItem.title = @"首页";
     ((YHMainViewController *)mainVC).url = url;
     return mainVC;
 }

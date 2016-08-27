@@ -22,8 +22,9 @@ WX_EXPORT_METHOD(@selector(openURL:))
     NSURL *URL = [[NSBundle mainBundle]URLForResource:url withExtension:@"js"];
     UIViewController *vc = [[YHMainViewController alloc]init];
     ((YHMainViewController *)vc).url = URL;
-    [[weexInstance.viewController navigationController] pushViewController:vc animated:YES];
-    
+    vc.navigationItem.title = url;
+    UINavigationController *nav = [weexInstance.viewController navigationController];
+    [nav pushViewController:vc animated:YES];
 }
 
 @end

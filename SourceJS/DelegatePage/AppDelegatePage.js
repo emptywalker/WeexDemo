@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	;__weex_define__("@weex-component/38c1bfa73204492b2bd2f6018a77e5bc", [], function(__weex_require__, __weex_exports__, __weex_module__){
+	;__weex_define__("@weex-component/52e4e7d6f32d3e75aef5955e0839b3b6", [], function(__weex_require__, __weex_exports__, __weex_module__){
 
 	;
 		__weex_module__.exports = {
@@ -61,31 +61,6 @@
 					{id: 'NestingComponent'},
 					{id: 'FindElement'},
 				],
-				rows:[
-					{id: 1},
-					{id: 2},
-					{id: 3},
-					{id: 4},
-					{id: 5},
-					{id: 6},
-					{id: 7},
-					{id: 8},
-					{id: 9},
-					{id: 10},
-					{id: 11},
-					{id: 12},
-					{id: 13},
-					{id: 14},
-					{id: 15},
-					{id: 16},
-					{id: 17},
-					{id: 18},
-					{id: 19},
-					{id: 20},
-					{id: 21},
-					{id: 22},
-					{id: 23},
-				]
 			}},
 			methods:{
 				onappear: function (e) {
@@ -115,16 +90,9 @@
 				},
 
 				rowDicSelected: function (e) {
-					nativeLog('----~~~~~~~~~~-----', e.target.attr.index);
-					var navigation = __weex_require__('@weex-module/navigator');
-					var param = {
-						'url':'https://baidu.com',
-						'animated': 'true',
-					};
-					navigation.push(param, function(e){
-						nativeLog('----~~~~~+++++++++++~~~~~-----', e.target);
-
-					});
+					var eventModule = __weex_require__('@weex-module/event');
+					var url = this.rowsData[e.target.attr.index].id;
+					eventModule.openURL(url);
 				}
 
 			}
@@ -168,7 +136,7 @@
 	                    "item-title"
 	                  ],
 	                  "attr": {
-	                    "value": function () {return 'row ' + (this.id)}
+	                    "value": function () {return this.id}
 	                  }
 	                }
 	              ]
@@ -182,10 +150,8 @@
 	;__weex_module__.exports.style = __weex_module__.exports.style || {}
 	;Object.assign(__weex_module__.exports.style, {
 	  "list": {
-	    "marginTop": 128,
 	    "padding": 0,
-	    "marginBottom": 0,
-	    "backgroundColor": "#FF0000"
+	    "marginBottom": 0
 	  },
 	  "count": {
 	    "fontSize": 48,
@@ -200,10 +166,13 @@
 	    "borderBottomColor": "#c0c0c0",
 	    "height": 100,
 	    "padding": 20
+	  },
+	  "item-title": {
+	    "textAlign": "center"
 	  }
 	})
 	})
-	;__weex_bootstrap__("@weex-component/38c1bfa73204492b2bd2f6018a77e5bc", {
+	;__weex_bootstrap__("@weex-component/52e4e7d6f32d3e75aef5955e0839b3b6", {
 	  "transformerVersion": "0.3.1"
 	},undefined)
 
