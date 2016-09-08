@@ -1,0 +1,77 @@
+<!-- <template style="background-color:red">
+
+
+	<scroller>
+		<div repeat = "{{list}}">
+
+			<text> {{name}} : ${{price}} </text>
+			
+		</div>
+	</scroller>
+</template> -->
+
+<!-- // 	module.exports = {
+// 		data: {
+// 			list:[
+// 				{
+// 					name:'张三', price: 9.0,
+// 				},
+// 				{
+// 					name:'张三', price: 2.0,
+// 				},
+// 				{
+// 					name:'张三', price:4.0,
+// 				},
+// 				{
+// 					name:'张三', price: 5.0,
+// 				},
+// 				{
+// 					name:'张三', price: 6.0,
+// 				},
+
+// 				{
+// 					name:'张三', price: 6.0,
+// 				},
+// 				{
+// 					name:'张三', price: 9.0,
+// 				},
+// 				{
+// 					name:'张三', price: 3.0,
+// 				},
+// 				{
+// 					name:'张三', price: 9.0,
+// 				},
+// 				{
+// 					name:'张三', price: 65.0,
+// 				},
+// 				{
+// 					name:'张三', price: 9.0,
+// 				},
+// 			]
+// 		}
+// 	} -->
+
+
+<template>
+  <scroller>
+    <div repeat="{{list}}">
+      <text>{{name}}: ${{price}}</text>
+    </div>
+  </scroller>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      list: [
+        {name: '.23..', price: 100},
+        {name: '..23.', price: 500},
+        {name: '..32.', price: 1.5},
+        {name: '.23..', price: 100},
+        {name: '..23.', price: 500},
+        {name: '..32.', price: 1.5},
+        {name: '.23..', price: 100},
+      ];
+    }
+  }
+</script>

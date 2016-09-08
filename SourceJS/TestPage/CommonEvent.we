@@ -1,0 +1,55 @@
+<template>
+	<div>
+		<input type="url" 
+			value="方式发斯蒂芬斯蒂芬" 
+			style="height:100; color:red; font-size:50"
+			placeholder="dajsdaskdkas"
+			autofocus="true"
+			>
+				
+		</input>
+		<switch checked="true"></switch>
+
+
+		<text onclick="clickText">我是来请求数据的  你稍等哈</text>
+
+		<!-- <switch style="width:200; height:50;" checked="true"></switch> -->
+	</div>
+	
+</template>
+
+<script>
+	module.exports = {
+		methods:{
+		
+			clickText: function ()  {
+				console.log('~~~~~~~~~~~~');
+				// var modal = require('@weex-module/modal');
+				// modal.toast({'message': 'I am toast!', 'duration': 1});
+				var stream = require("@weex-module/stream")
+				stream.fetch({
+					method: 'GET',
+					url: 'http://httpbin.org/get',
+					type: 'json',
+				}, function (response){
+
+				}, function (response){
+					console.log(response);
+				});
+			}
+			// change: function (e) {
+			// 	// body...
+			// 	// var text = e.target.value;
+			// 	console.log('~~~~~~~~~~~~');
+			// }
+
+
+		},
+	}
+
+	// function change(e) {
+	// 			// body...
+	// 			var text = e.target.value;
+	// 			console.log(text);
+	// 		}
+</script>

@@ -1,0 +1,21 @@
+<we-element name="item">
+	<template>
+		<div>
+			<content>
+				
+			</content>
+		</div>
+	</template>
+
+</we-element>
+
+
+<template>
+
+	<div>
+		<item>
+			<text>Content Text</text>
+		</item>
+	</div>
+	
+</template>
